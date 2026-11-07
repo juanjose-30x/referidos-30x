@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Referidos cierre Octubre · 30X</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#f4f4f1; --panel:#ffffff; --ink:#111110; --mute:#6b6b66; --line:#e2e2dc;
+  --lime:#e9ff7b; --lime-ink:#1d2300; --ok:#1f7a3e; --ok-bg:#e3f3e7; --warn:#9a5b00; --warn-bg:#fdf0d9;
+  --bad:#b3261e; --bad-bg:#fbe4e2; --run:#1e4fa8; --run-bg:#e2ebfb; --wa:#1a8f4c;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c0c0b; --panel:#161615; --ink:#f1f1ec; --mute:#9a9a92; --line:#2a2a27;
+  --ok:#7fd69a; --ok-bg:#16291c; --warn:#f2c06b; --warn-bg:#2e2410; --bad:#ff8a80; --bad-bg:#331614; --run:#8fb4ff; --run-bg:#14213a; --wa:#3cc977; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c0c0b; --panel:#161615; --ink:#f1f1ec; --mute:#9a9a92; --line:#2a2a27;
+  --ok:#7fd69a; --ok-bg:#16291c; --warn:#f2c06b; --warn-bg:#2e2410; --bad:#ff8a80; --bad-bg:#331614; --run:#8fb4ff; --run-bg:#14213a; --wa:#3cc977; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ink)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:var(--ink);color:var(--bg)}
+header.top .wrap{display:flex;align-items:center;gap:16px;padding-block:12px;flex-wrap:wrap}
+.brand{font:800 18px/1 var(--display);letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
+.brand i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--lime)}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav button{font:600 13px/1 var(--body);padding:8px 12px;border-radius:999px;color:var(--bg);background:transparent;border:0;opacity:.72;cursor:pointer}
+nav button:hover{opacity:1}
+nav button.on{background:var(--lime);color:var(--lime-ink);opacity:1}
+.sync{margin-left:auto;font:12px var(--mono);opacity:.7}
+main{padding-block:28px 64px}
+h1{font:800 clamp(28px,4vw,44px)/1.02 var(--display);letter-spacing:-.035em;margin:0 0 6px;text-wrap:balance}
+h3{font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 10px}
+.lede{color:var(--mute);max-width:68ch;margin:0 0 14px}
+.offer{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.pill{display:inline-block;font:600 11px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:var(--panel);border:1px solid var(--line);color:var(--ink)}
+.pill.hl{background:var(--lime);color:var(--lime-ink);border-color:transparent}
+.grid{display:grid;gap:16px}
+.g4{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.g4>*{min-width:0}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.stat span{color:var(--mute);font-size:13px}
+.stat b{display:block;font:600 30px/1.05 var(--mono);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.stat small{display:block;font:12px var(--mono);color:var(--mute);margin-top:6px}
+.bar{height:6px;border-radius:99px;background:var(--line);overflow:hidden;margin-top:10px}
+.bar i{display:block;height:100%;background:var(--ink)}
+.team{margin-top:16px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:26px 0 14px}
+.filters input{flex:1 1 240px;min-width:0;font:14px var(--body);padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink)}
+.tog{font:600 13px var(--body);padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.tog.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.count{font:12px var(--mono);color:var(--mute)}
+.status{font-size:13px;color:var(--warn);background:var(--warn-bg);border-radius:10px;padding:8px 12px;margin-bottom:12px}
+.list{display:grid;gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.5fr) minmax(0,1fr);gap:18px;position:relative}
+.card::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:3px;border-radius:3px;background:var(--line)}
+.card.done::before{background:var(--ok)}
+.card.nope::before{background:var(--warn)}
+.card.done{background:color-mix(in srgb,var(--ok-bg) 45%,var(--panel))}
+@media(max-width:900px){.card{grid-template-columns:minmax(0,1fr)}}
+.nm{font:700 17px/1.2 var(--display);letter-spacing:-.015em}
+.co{font-size:13px;color:var(--mute);margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.who{font:600 11.5px var(--mono);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:1px 7px;color:var(--ink)}
+.who.resp{background:var(--lime);color:var(--lime-ink);border-color:transparent}
+.t-good{background:var(--ok-bg);color:var(--ok);border-color:transparent}
+.t-warn{background:var(--warn-bg);color:var(--warn);border-color:transparent}
+.t-bad{background:var(--bad-bg);color:var(--bad);border-color:transparent}
+.meta{font-size:12.5px;color:var(--mute);margin-top:6px}
+.meta b{color:var(--ink);font-weight:600}
+.meta.alert{color:var(--warn)}
+.mono{font-family:var(--mono);font-size:12px}
+.ctx{font-size:13.5px;min-width:0}
+.ctx p{margin:0 0 10px}
+.ctx .nps{color:var(--mute);font-style:italic}
+.ctx details{margin-bottom:10px}
+.ctx summary{cursor:pointer;font-size:12.5px;font-weight:600;color:var(--run)}
+.act{display:flex;flex-direction:column;gap:10px;min-width:0}
+.checks{display:grid;gap:8px}
+.ck{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;cursor:pointer;user-select:none}
+.chk{appearance:none;width:22px;height:22px;border:2px solid var(--mute);border-radius:6px;margin:0;cursor:pointer;display:grid;place-items:center;background:var(--panel);flex:none}
+.chk:checked{background:var(--ink);border-color:var(--ink)}
+.chk:checked::after{content:"";width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.chk:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:2px solid var(--run);outline-offset:2px}
+.seg{display:flex;gap:6px}
+.seg button{flex:1;font:600 12.5px var(--body);border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--mute);padding:7px 8px;cursor:pointer}
+.seg button.si.on{background:var(--ok-bg);color:var(--ok);border-color:var(--ok)}
+.seg button.no.on{background:var(--warn-bg);color:var(--warn);border-color:var(--warn)}
+textarea{width:100%;font:13px/1.45 var(--body);border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--panel);color:var(--ink);resize:vertical;min-height:40px}
+.wa{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--wa);color:#fff;font:600 13px var(--body);padding:10px 14px;border-radius:8px;text-decoration:none}
+.wa.off{background:var(--line);color:var(--mute);pointer-events:none}
+.saved{font:11.5px var(--mono);color:var(--mute);min-height:14px}
+@keyframes fl{from{box-shadow:0 0 0 3px var(--lime)}to{box-shadow:0 0 0 0 transparent}}
+.card.flash{animation:fl 1.6s ease-out}
+.sync b{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--lime);margin-right:6px;vertical-align:middle}
+.empty{color:var(--mute);font-size:14px;padding:14px 4px}
+footer{margin-top:28px;font:11.5px var(--mono);color:var(--mute);max-width:90ch}
+</style>
+
+<style>
+.gate{max-width:420px;margin:12vh auto;padding:28px}
+.gate h1{font-size:30px}
+.gate input,.gate select{width:100%;font:15px var(--body);padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);margin:8px 0 12px}
+.gate button,.btn{font:600 14px var(--body);padding:11px 16px;border-radius:10px;border:0;background:var(--ink);color:var(--bg);cursor:pointer}
+.err{color:var(--bad);font-size:13px;min-height:18px}
+.me{font:600 12px var(--body);background:transparent;color:var(--bg);border:1px solid color-mix(in srgb,var(--bg) 35%,transparent);border-radius:999px;padding:6px 10px;cursor:pointer}
+.feed{margin-top:16px}
+.feed ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;max-height:220px;overflow:auto}
+.feed li{font-size:13px;color:var(--mute)}
+.feed li b{color:var(--ink);font-weight:600}
+.by{font:11.5px var(--mono);color:var(--mute)}
+</style>
+</head><body>
+<div id="gate" class="gate" hidden>
+  <div class="brand" style="color:var(--ink);margin-bottom:18px"><i></i>Referidos · cierre Octubre</div>
+  <h1>Entra al tablero</h1>
+  <p class="lede">Tablero del equipo de ventas de 30X. Usa la clave que te pasó JJ.</p>
+  <label for="gk" class="by">Clave</label><input id="gk" type="password" autocomplete="current-password">
+  <label for="gw" class="by">¿Quién eres?</label>
+  <select id="gw"><option value="">Elige tu nombre</option><option>Luigi</option><option>Ricardo</option><option>Jesús</option><option>Julio</option><option>Nicolle</option><option>JJ</option></select>
+  <button id="gb">Entrar</button><div class="err" id="ge"></div>
+</div>
+<div id="app" hidden>
+<header class="top"><div class="wrap">
+  <div class="brand"><i></i>Referidos · cierre Octubre</div>
+  <nav id="who" aria-label="Closer"></nav>
+  <button class="me" id="me" title="Cambiar de usuario"></button><div class="sync" id="sync">Conectando…</div>
+</div></header>
+
+<main class="wrap">
+  <h1>Referidos y crossell · AI Sales y Sales Machine</h1>
+  <p class="lede">Hoy es la última mentoría. Cada closer llama a sus alumnos para pedir referidos y ver cómo los acompañamos desde otros frentes. Lo que marques se guarda solo y lo ve todo el equipo.</p>
+  <div class="offer"><span class="pill hl">USD 200 por cada referido que entre</span><span class="pill">Bono para cualquier programa</span><span class="pill">2 llamadas + WhatsApp</span></div>
+
+  <div class="grid g4" id="kpis"></div>
+  <div class="grid g4 team" id="team"></div>
+  <div class="panel feed"><h3>Últimos movimientos del equipo</h3><ul id="feed"><li>Todavía no hay movimientos.</li></ul></div>
+
+  <div class="filters">
+    <input id="q" type="search" placeholder="Buscar nombre, empresa o programa" aria-label="Buscar">
+    <button class="tog" id="pend">Solo pendientes</button>
+    <span class="count" id="count"></span>
+  </div>
+  <div class="status" id="status" hidden></div>
+  <div class="list" id="list"></div>
+  <footer>Lista: deals ganados de AI Sales y Sales Machine de la cohorte Octubre 2026 en HubSpot (corte 7-nov), sin cortesías ni deals sin cobro. «Cómo le fue» y los comentarios salen de la plataforma de NPS. El contexto viene de la llamada de venta en Grain. El botón abre WhatsApp con el mensaje listo; edítalo antes de mandarlo si quieres.</footer>
+</main>
+
+</div>
+<script>
+const API = "https://referidos-30x-nrytxnj45a-uc.a.run.app";
+const CLOSERS = ["Luigi","Ricardo","Jesús","Julio","Nicolle"];
+let PEOPLE = [], state = {}, feed = [], drafts = {};
+let filterResp = "Todos", onlyPend = false, q = "", KEY = "", ME = "", es = null, pollTimer = null;
+const store = { get(k){ try { return localStorage.getItem(k) || ""; } catch(e){ return ""; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} }, del(k){ try { localStorage.removeItem(k); } catch(e){} } };
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const digits = t => String(t||"").replace(/\D/g,"");
+function phone(p){ let d = digits(p.tel); if (d.length===10 && d.startsWith("3")) d = "57"+d; return d.length>=10 ? d : ""; }
+function msgFor(p){ return (drafts[p.id] ?? p.msg ?? "").replaceAll("{closer}", p.resp); }
+function isDone(s){ return s && (s.wa || s.l1 || s.l2 || s.contacto==="si"); }
+function tipoClass(t){ return /Promotor|Contento/.test(t) ? "t-good" : /Insatisf|Detractor/.test(t) ? "t-bad" : /Neutro|Pasivo/.test(t) ? "t-warn" : ""; }
+const hora = ms => new Date(ms).toLocaleString("es-CO",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
+function fmtAt(s){ return s && s.at ? `${s.por ? s.por + " · " : ""}${hora(s.at)}` : ""; }
+const LBL = { wa:"WhatsApp", l1:"Llamada 1", l2:"Llamada 2", contacto:"Contacto", notas:"Notas" };
+function describe(c){ return Object.entries(c||{}).map(([k,v]) => k==="contacto" ? (v==="si"?"Contactado":v==="no"?"No contactado":"Contacto borrado") : k==="notas" ? "Notas" : `${LBL[k]} ${v?"✓":"✗"}`).join(", "); }
+
+async function api(path, opts = {}){
+  const r = await fetch(API + path, { ...opts, headers: { "Content-Type":"application/json", "X-Clave": KEY, ...(opts.headers||{}) } });
+  if (r.status === 401) throw Object.assign(new Error("clave"), { code: 401 });
+  if (!r.ok) throw new Error("http " + r.status);
+  return r.json();
+}
+
+function renderTop(){
+  const all = PEOPLE, n = all.length, st = id => state[id] || {};
+  const wa = all.filter(p=>st(p.id).wa).length, l1 = all.filter(p=>st(p.id).l1).length;
+  const ct = all.filter(p=>st(p.id).contacto==="si").length, nc = all.filter(p=>st(p.id).contacto==="no").length;
+  const done = all.filter(p=>isDone(st(p.id))).length;
+  const stat=(l,v,s,p)=>`<div class="panel stat"><span>${l}</span><b>${v}</b>${s?`<small>${s}</small>`:""}${p!=null?`<div class="bar"><i style="width:${p}%"></i></div>`:""}</div>`;
+  $("#kpis").innerHTML = stat("Alumnos",n,"sin cortesías")+stat("Con avance",`${done}/${n}`,"llamada, WhatsApp o contacto",n?Math.round(done*100/n):0)+stat("WhatsApp hecho",wa,`llamada 1: ${l1}`)+stat("Contactados",ct,nc?`${nc} no contactados`:"");
+  $("#team").innerHTML = CLOSERS.map(c=>{
+    const mine = all.filter(p=>p.resp===c), d = mine.filter(p=>isDone(st(p.id))).length, c2 = mine.filter(p=>st(p.id).contacto==="si").length;
+    const pct = mine.length ? Math.round(d*100/mine.length) : 0;
+    return `<div class="panel stat"><span>${c}</span><b>${d}/${mine.length}</b><small>${c2} contactados</small><div class="bar"><i style="width:${pct}%"></i></div></div>`;
+  }).join("");
+  $("#feed").innerHTML = feed.length ? feed.slice(0,30).map(a=>`<li><b>${esc(a.por||"Alguien")}</b> · ${esc(a.nombre)} · ${esc(describe(a.cambios))} <span class="by">${hora(a.at)}</span></li>`).join("") : "<li>Todavía no hay movimientos.</li>";
+}
+function renderFilters(){
+  $("#who").innerHTML = ["Todos",...CLOSERS].map(c=>`<button class="${c===filterResp?"on":""}" data-r="${c}">${c}</button>`).join("");
+  $("#pend").classList.toggle("on", onlyPend);
+  $("#me").textContent = ME ? `Soy ${ME}` : "¿Quién eres?";
+}
+function card(p){
+  const s = state[p.id] || {}, ph = phone(p);
+  const cls = isDone(s) ? "done" : (s.contacto==="no" ? "nope" : "");
+  const wa = ph ? `https://wa.me/${ph}?text=${encodeURIComponent(msgFor(p))}` : "";
+  const score = [p.nps!=null?`NPS ${p.nps}`:"", p.csat!=null?`CSAT ${p.csat}`:""].filter(Boolean).join(" · ");
+  return `<div class="card ${cls}" data-id="${p.id}">
+    <div class="who">
+      <div class="nm">${esc(p.nombre)}</div>
+      <div class="co">${esc([p.cargo,p.empresa].filter(Boolean).join(" · ")) || "—"}</div>
+      <div class="tags"><span class="who resp">${esc(p.resp)}</span><span class="who">${esc(p.progs)}</span><span class="who ${tipoClass(p.tipo)}">${esc(p.tipo)}${score?" · "+score:""}</span></div>
+      <div class="meta">Ofrecer: <b>${esc(p.cross)}</b></div>
+      <div class="meta">Vendido por ${esc(p.own)}${p.otros?` · también compró ${esc(p.otros)}`:""}</div>
+      ${p.nota?`<div class="meta alert">${esc(p.nota)}</div>`:""}
+      <div class="meta mono">${ph?("+"+ph):"Sin teléfono"} · ${esc(p.correo)}</div>
+    </div>
+    <div class="ctx">
+      <h3>Cómo abrir</h3><p>${esc(p.angulo)}</p>
+      ${p.grain?`<h3>Lo que dijo en la llamada de venta</h3><p>${esc(p.grain)}</p>`:""}
+      ${p.coms?`<details><summary>Comentarios en la plataforma de NPS</summary><p class="nps">${esc(p.coms)}</p></details>`:""}
+      <h3>Mensaje de WhatsApp</h3>
+      <textarea class="msgbox" data-k="msg" rows="6">${esc(msgFor(p))}</textarea>
+    </div>
+    <div class="act">
+      <div class="checks">${[["wa","WhatsApp hecho"],["l1","Llamada 1"],["l2","Llamada 2"]].map(([k,l])=>`<label class="ck"><input type="checkbox" class="chk" data-k="${k}" ${s[k]?"checked":""}>${l}</label>`).join("")}</div>
+      <div class="seg"><button class="si ${s.contacto==="si"?"on":""}" data-c="si">Contactado</button><button class="no ${s.contacto==="no"?"on":""}" data-c="no">No contactado</button></div>
+      <textarea data-k="notas" rows="2" placeholder="Notas: referidos, interés, siguiente paso">${esc(s.notas||"")}</textarea>
+      <a class="wa ${wa?"":"off"}" href="${wa||"#"}" target="_blank" rel="noopener">Abrir WhatsApp con el mensaje ↗</a>
+      <div class="saved">${fmtAt(s)}</div>
+    </div>
+  </div>`;
+}
+function renderList(){
+  const qq = q.trim().toLowerCase();
+  const rows = PEOPLE.filter(p => (filterResp==="Todos" || p.resp===filterResp) && (!onlyPend || !isDone(state[p.id]))
+    && (!qq || [p.nombre,p.empresa,p.progs,p.cargo,p.resp].join(" ").toLowerCase().includes(qq)));
+  $("#list").innerHTML = rows.map(card).join("") || `<div class="empty">No hay alumnos con ese filtro.</div>`;
+  $("#count").textContent = `${rows.length} alumnos`;
+}
+function renderAll(){ renderTop(); renderFilters(); renderList(); }
+function patchCard(id, flash){
+  const el = document.querySelector(`.card[data-id="${id}"]`); if (!el) return;
+  const s = state[id] || {};
+  el.classList.toggle("done", !!isDone(s)); el.classList.toggle("nope", !isDone(s) && s.contacto==="no");
+  el.querySelectorAll("input.chk").forEach(c => { c.checked = !!s[c.dataset.k]; });
+  el.querySelectorAll(".seg button").forEach(b => b.classList.toggle("on", b.dataset.c===s.contacto));
+  const n = el.querySelector('textarea[data-k="notas"]'); if (n && document.activeElement!==n) n.value = s.notas || "";
+  el.querySelector(".saved").textContent = fmtAt(s);
+  if (flash){ el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); }
+}
+function showStatus(t){ const s=$("#status"); s.textContent=t; s.hidden=!t; }
+function live(t){ $("#sync").innerHTML = t ? `<b></b>${t}` : ""; }
+
+async function save(id, cambios){
+  state[id] = { ...(state[id]||{}), ...cambios, at: Date.now(), por: ME };
+  renderTop(); patchCard(id, false);
+  try { const r = await api("/marcar", { method:"POST", body: JSON.stringify({ id, cambios, por: ME }) }); state[id] = r.estado; patchCard(id,false); showStatus(""); }
+  catch(e){ showStatus(e.code===401 ? "Tu clave cambió: vuelve a entrar." : "No se pudo guardar el último cambio. Revisa tu conexión y vuelve a marcarlo."); }
+}
+
+function onEvent(d){
+  state[d.id] = d.estado;
+  if (d.actividad) feed.unshift(d.actividad); feed = feed.slice(0,60);
+  renderTop(); patchCard(d.id, d.estado.por !== ME);
+  if (onlyPend && !(document.activeElement && document.activeElement.tagName==="TEXTAREA")) renderList();
+}
+async function connect(){
+  if (es) es.close();
+  let t = ""; try { t = (await api("/ticket", { method:"POST", body:"{}" })).ticket; } catch(e){ live("Reconectando…"); if (!pollTimer) pollTimer = setInterval(refresh, 8000); setTimeout(connect, 10000); return; }
+  es = new EventSource(`${API}/eventos?t=${encodeURIComponent(t)}`);
+  es.addEventListener("hola", () => { live("En vivo · " + new Date().toLocaleTimeString("es-CO",{hour:"2-digit",minute:"2-digit"})); clearInterval(pollTimer); pollTimer = null; });
+  es.addEventListener("estado", e => { onEvent(JSON.parse(e.data)); live("En vivo · " + new Date().toLocaleTimeString("es-CO",{hour:"2-digit",minute:"2-digit"})); });
+  es.onerror = () => { live("Reconectando…"); if (!pollTimer) pollTimer = setInterval(refresh, 8000); if (es.readyState===2) setTimeout(connect, 5000); };
+}
+async function refresh(){
+  try { const d = await api("/datos"); state = d.estado || {}; feed = d.actividad || []; renderTop(); PEOPLE.forEach(p=>patchCard(p.id,false)); } catch(e){}
+}
+
+async function enter(){
+  try {
+    const d = await api("/datos");
+    PEOPLE = d.personas; state = d.estado || {}; feed = d.actividad || [];
+    $("#gate").hidden = true; $("#app").hidden = false;
+    if (!filterResp || filterResp==="Todos") filterResp = CLOSERS.includes(ME) ? ME : "Todos";
+    renderAll(); connect();
+  } catch(e){
+    $("#app").hidden = true; $("#gate").hidden = false;
+    $("#ge").textContent = e.code===401 ? (KEY ? "Clave incorrecta." : "") : "No se pudo conectar. Intenta de nuevo en un momento.";
+  }
+}
+
+document.addEventListener("click", e => {
+  if (e.target.id==="gb"){ KEY = $("#gk").value.trim(); ME = $("#gw").value; if (!ME){ $("#ge").textContent="Elige tu nombre."; return; } store.set("ref_k",KEY); store.set("ref_me",ME); enter(); return; }
+  if (e.target.id==="me"){ store.del("ref_me"); $("#gw").value=""; $("#gk").value=KEY; $("#app").hidden=true; $("#gate").hidden=false; if (es) es.close(); return; }
+  const r = e.target.closest("[data-r]"); if (r){ filterResp = r.dataset.r; store.set("ref_resp",filterResp); renderFilters(); renderList(); return; }
+  if (e.target.id==="pend"){ onlyPend=!onlyPend; renderFilters(); renderList(); return; }
+  const c = e.target.closest("[data-c]"); if (c){ const id=c.closest(".card").dataset.id; const v = (state[id]||{}).contacto===c.dataset.c ? "" : c.dataset.c; save(id,{contacto:v}); }
+});
+document.addEventListener("change", e => { const t=e.target; if (t.classList && t.classList.contains("chk")) save(t.closest(".card").dataset.id, {[t.dataset.k]: t.checked}); });
+document.addEventListener("input", e => {
+  const t = e.target, cardEl = t.closest && t.closest(".card"); if (!cardEl || t.dataset.k!=="msg") return;
+  const id = cardEl.dataset.id; drafts[id] = t.value; const p = PEOPLE.find(x=>x.id===id), ph = phone(p);
+  if (ph) cardEl.querySelector(".wa").href = `https://wa.me/${ph}?text=${encodeURIComponent(msgFor(p))}`;
+});
+document.addEventListener("focusout", e => { const t=e.target; if (t.dataset && t.dataset.k==="notas"){ const id=t.closest(".card").dataset.id; if ((state[id]||{}).notas!==t.value) save(id,{notas:t.value}); } });
+document.addEventListener("keydown", e => { if (e.key==="Enter" && (e.target.id==="gk")) $("#gb").click(); });
+document.addEventListener("DOMContentLoaded", () => {
+  $("#q").addEventListener("input", e => { q = e.target.value; renderList(); });
+  KEY = store.get("ref_k"); ME = store.get("ref_me"); filterResp = store.get("ref_resp") || "";
+  if (KEY && ME) enter(); else { $("#gate").hidden = false; if (KEY) $("#gk").value = KEY; }
+});
+document.addEventListener("visibilitychange", () => { if (!document.hidden && KEY && es && es.readyState===2) connect(); });
+
+</script>
+</body></html>
